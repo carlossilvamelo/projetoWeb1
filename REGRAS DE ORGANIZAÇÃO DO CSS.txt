@@ -1,0 +1,13 @@
+
+Os arquivos css estão separados em DOIS diretórios:
+	1 - css: Estilos feitos por nós.
+	2 - css-bootstrap: Estilos do bootstrap (NÃO DEVEM DER MODIFICADOS)
+
+
+No diretório "css", os aruivos de estilo estarão separados em estilos especificos por pagina e um arquivo com estilos globais, ou seja,
+que são usados em todas as paginas.
+
+OBS1: Os estilos globais devem ser implementados acessando ID´s, por serem estilos que não devem mudar por todo o site.
+
+OBS2: Os estilos de paginas espeficicas devem seguir um padrão de classes, ou seja, criando uma classe de estilo e
+chamando o estilo na Tag.

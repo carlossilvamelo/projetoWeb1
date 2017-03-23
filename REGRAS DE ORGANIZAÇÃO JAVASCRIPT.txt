@@ -1,0 +1,3 @@
+Os arquivos javaScript estão separados em DOIS diretórios:
+	1 - js: Js feitos por nós.
+	2 - js-bootstrap: Js do bootstrap (NÃO DEVEM DER MODIFICADOS)
