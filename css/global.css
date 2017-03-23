@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* cores
+
+verde: #55CF5B
+azul claro: #55cfbe
+axul: #557ccf
+verde base: #b3cf55
+laranja: #cf8855
+
+*/
+
+/*
+    CSS COM CONFIGURAÇÕES GLOBAIA:
+*/
+
+
+/*              ESTILOS DE CABEÇALHO e MENU        */
+div#menu{
+    background-color: #59d259;
+}
+
+div#botaoDropdown{
+    padding: 10px;
+}
+
+div#barraNavegacao {
+    border-bottom: 1px solid #59d259;
+    margin-right: 50px;
+
+}
+div#barraNavegacao button{
+    background-color: #59d259;
+}
+
+
+div#imgLogoCabecalho{
+    padding-bottom: 120px;
+}
+
+div#menu button:hover,div#barraNavegacao button:hover{
+    background-color: #60bd60;
+    transition: background-color .5s;
+    transition: color .5s;
+    color: white;
+}
+

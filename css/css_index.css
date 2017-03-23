@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*
+    Estilos especificos para a pagin a de login "index"
+*/
+.estiloDiv{
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 50px;
+}
+.itensForm{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.backAzul{
+    background-color: #4cae4c;
+}
