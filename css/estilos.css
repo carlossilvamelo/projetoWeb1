@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* cores
+
+verde: #55CF5B
+azul claro: #55cfbe
+axul: #557ccf
+verde base: #b3cf55
+laranja: #cf8855
+
+*/
+
+
+/* cabeçalho */
+
+.bgCor1{
+    background-color: #000000;
+}
+.bgCor1{
+    background-color: #28a4c9;
+}
+div#cabecalho{
+    background-color: #5bfb61;
+    padding-bottom: 100px;
+
+}
+div#divContainer{
+    box-shadow: 4px 4px 10px black;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #5bfb61;
+
+}
+
+
+/* estilo de menu*/
+div#menu{
+    background-color: #59d259;
+}
+div#btNav {
+    border-bottom: 1px solid #59d259;
+
+}
+div#btNav button{
+    background-color: #59d259;
+}
+div#btNav{
+    margin-right: 50px;
+}
+div#botoesMenu{
+    padding: 10px;
+}
+div#imgBrand{
+    padding-bottom: 110px;
+}
+div#menu button:hover,div#btNav button:hover{
+    background-color: #3c783c;
+    transition: background-color 1s;
+    transition: color 1s;
+    color: white;
+}
+
+.botoesMenu{
+    background-color: #59d259;
+}
+
+.botoresMenu:hover{
+    background-color: #3c783c;
+    transition: background-color 1s;
+    transition: color 1s;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.estiloDiv{
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 50px;
+}
+.itensForm{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.backAzul{
+    background-color: #4cae4c;
+}
