@@ -2,18 +2,40 @@
 /*
     Estilos especificos para a pagin a de login "index"
 */
+
+html {
+    height: 100%;
+}
+
+
 .estiloDiv{
     width: 600px;
     height: 500px;
     padding: 30px;
-    background-color: white;
-    box-shadow: 2px 2px 10px black;
+    background-color: transparent;
     border-radius: 50px;
+    color: white;
+    text-shadow: -1px 0 #aeaeae, 0 -1px #aeaeae, 1px 0 #aeaeae, 0 1px #aeaeae;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    z-index:1;
 }
 .itensForm{
     margin-bottom: 15px;
     margin-top: 15px;
+    border-radius: 15px;
 }
-.backAzul{
-    background-color: #4cae4c;
+
+
+
+.backAzul {
+    background-image: url(../imagens/candidato-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
