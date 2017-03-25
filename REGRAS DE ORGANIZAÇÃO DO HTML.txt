@@ -1,0 +1,12 @@
+
+São 3 pastas para os arquivos HTML:
+
+	* pasta "templates": Contém dois templates que são partes do código html que não mudam, que são cabeçalho e 
+			rodapé. Um template para aluno e outro para professor. Esse template serve de base para
+			qualquer pagina que venha a ser contruida (basta criar uma copia e modificar o nome).
+	
+	* Pasta "layout-aluno": Contém os arquivos HTML do usuário aluno.
+
+	* Pasta "layout-professor": Contém os arquivos HTML do usuário professor.
+
+Obs: O arquivo "index" fica na pasta raiz.	

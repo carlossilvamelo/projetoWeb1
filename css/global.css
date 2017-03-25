@@ -19,29 +19,118 @@ laranja: #cf8855
 div#menu{
     background-color: #59d259;
 }
+div#menu button:hover{
+    background-color: #60bd60;
+    transition: background-color .5s;
+    transition: color .5s;
+    color: white;
+}
+div#imgLogoCabecalho{
+    padding-top: 0px;
+    margin-top: -10px;
+    padding-bottom: 48px;
+
+}
 
 div#botaoDropdown{
     padding: 10px;
 }
 
-div#barraNavegacao {
+
+
+
+.backColor{ /* para testes */
+    background-color: rgba(89, 210, 89, 0.25);
+}
+
+
+
+/* barras de navegação ALUNO*/
+.barraNavegacaoAluno {
     border-bottom: 1px solid #59d259;
-    margin-right: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: auto;
+    width:100%;
 
 }
-div#barraNavegacao button{
+
+.barraNavegacaoAluno button{
+    font-weight: bold;
+    width: 33%;
+    min-width: 200px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     background-color: #59d259;
 }
 
+.barraNavegacaoAluno button:hover{
+    background-color: #60bd60;
+    transition: background-color .5s;
+    transition: color .5s;
+    color: white;
+}
+/* barras de navegação PROFESSOR*/
+.barraNavegacaoProfessor {
+    border-bottom: 1px solid #59d259;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: auto;
+    width:100%;
 
-div#imgLogoCabecalho{
-    padding-bottom: 120px;
 }
 
-div#menu button:hover,div#barraNavegacao button:hover{
+.barraNavegacaoProfessor button{
+    font-weight: bold;
+    width: 33%;
+    min-width: 200px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #59d259;
+}
+
+.barraNavegacaoProfessor button:hover{
     background-color: #60bd60;
     transition: background-color .5s;
     transition: color .5s;
     color: white;
 }
 
+
+
+/* RODAPÉ*/
+footer{
+    background-color: #59d259;
+    border-top: 2px solid white;
+    height: 50px;
+    padding: 1px;
+
+}
+footer p{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+/*------ kit para personalizar scroll no chrome*/
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: rgba(89, 210, 89, 0.23);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #59d259;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+/*-------------------------------*/

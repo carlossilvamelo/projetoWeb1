@@ -3,3 +3,45 @@
 /*
     Estilos especificos da pagina index-aluno
 */
+
+
+/* div conteudo*/
+
+div#divConteudo{
+    background-color: white;
+    display: block;
+    position: relative;
+    float:left;
+    /*posicinamento*/
+    margin-top: 120px;
+    margin-left: 100px;
+    padding: 5px;
+    width: 800px;
+
+    height: 400px;
+    text-align: center;
+    overflow:auto;
+    word-wrap: break-word;
+
+
+}
+
+/*estilo para scroll*/
+
+
+
+
+div#divLadoDireito{
+    background-color: white;
+    display: block;
+    float: right;
+    margin-top: 120px;
+    margin-right: 30px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    overflow:auto;
+    word-wrap: break-word;
+
+
+}
