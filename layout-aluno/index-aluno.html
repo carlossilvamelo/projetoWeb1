@@ -12,6 +12,8 @@
 
     <link href="../css-bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/css_index-aluno.css" rel="stylesheet">
+    <link href="../css/css_barra-navegacao-aluno.css" rel="stylesheet">
     <link href="../css-bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="../css-bootstrap/signin.css" rel="stylesheet">
     <script src="../js-bootstrap/bootstrap.js"></script>
@@ -23,7 +25,7 @@
 <body class="backColor">
 
 
-        <nav  class="span12 navbar navbar-default navbar-fixed-top ">
+        <nav  class="col-md-12 navbar navbar-default navbar-fixed-top ">
             <div id="menu" class="container-fluid">
 
                 <div id="imgLogoCabecalho" class="navbar-header ">
@@ -31,27 +33,21 @@
                         <img alt="Brand" src="../imagens/icone-brand.png">
                     </a>
                 </div>
+                <h1>Post<wbr>Acad</h1>
 
 
-                <div id="botaoDropdown" class="dropdown navbar-right  ">
-
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Perfil
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                <div id="dropdownPerfil" class="">
+                    <li><a href="#">olá usuário!</a>
+                        <ul>
+                            <li><a href="#">Logout</a></li>
                         </ul>
+                    </li>
+                </div>
 
-                    </div>
             </div>
 
-            <div id="barraNavegacao" class="span12 navbar-default nav-justified  ">
-                <button type="button" class="btn btn-default navbar-btn">Home</button>
+            <div id="barraNavegacao" class=" barraNavegacaoAluno span12 navbar-default nav-justified  ">
+
                 <button type="button" class="btn btn-default navbar-btn">Gerenciar trabalhos</button>
                 <button type="button" class="btn btn-default navbar-btn">Gerenciar contatos</button>
                 <button type="button" class="btn btn-default navbar-btn">Gerenciar perfil</button>
@@ -59,7 +55,7 @@
 
         </nav>
 
-        <div id="divConteudo" class="span8 ">
+        <div id="divConteudo" class="container-fluid col-sm-push-1 col-md-7 ">
 
 
 
@@ -116,7 +112,7 @@
         </div>
 
 
-        <div id="divLadoDireito" class="span2 ">
+        <div id="divLadoDireito" class="col-md-3 ">
             _____________------------------------------------------------------------0=0=========
             <br><br><br><br>
             _____________------------------------------------------------------------0=0=========
