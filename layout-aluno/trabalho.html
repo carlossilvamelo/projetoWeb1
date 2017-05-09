@@ -29,15 +29,15 @@
 <body class="backColor">
 
 
-<nav  class="col-md-12 navbar navbar-default navbar-fixed-top ">
+<nav  class="navegador col-md-12 navbar navbar-default navbar-fixed-top ">
     <div id="menu" class="container-fluid">
 
         <div id="imgLogoCabecalho" class="navbar-header ">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index-aluno.html">
                 <img alt="Brand" src="../imagens/icone-brand.png"/>
             </a>
         </div>
-        <h1>Post<wbr>Acad</h1>
+        <h1>Post<wbr/>Acad</h1>
 
 
         <div id="dropdownPerfil" class="">
@@ -51,10 +51,10 @@
     </div>
 
 
-    <div id="barraNavegacao" class=" barraNavegacaoAluno span12 navbar-default nav-justified  ">
-        <a href="trabalhos-aluno.html"type="button" class="btn btn-default navbar-btn ">Gerenciar trabalhos</a>
-        <a href="gerenciar-contatos.html"type="button" class="btn btn-default navbar-btn">Gerenciar contatos</a>
-        <a href="perfil-aluno.html"type="button" class="btn btn-default navbar-btn">Gerenciar perfil</a>
+    <div id="barraNavegacao" class="barraNavegacaoAluno span12 navbar-default nav-justified  ">
+        <a href="trabalhos-aluno.html" type="button" class="btn btn-default navbar-btn ">Gerenciar trabalhos</a>
+        <a href="gerenciar-contatos.html" type="button" class="btn btn-default navbar-btn">Gerenciar contatos</a>
+        <a href="perfil-aluno.html" type="button" class="btn btn-default navbar-btn">Gerenciar perfil</a>
     </div>
 
 </nav>
@@ -64,28 +64,34 @@
     <div id="divInfoTrabalho" class="divInfoTrabalho col-md-12">
         <h3>Informações do trabalho</h3>
         <table class="col-md-12">
+            <thead>
+                <th>Titulo</th>
+                <th>Ações</th>
+            </thead>
+
             <tr>
             <td>
-                <p>Titulo:</p> <span>projeto postacad</span>
-                <a type="button" class="btn btn-default " onclick="Mudarestado('divEdicao')">Editar</a>
-                <br>
-                <div id="divEdicao">
-                    <input type="text"/>
-                    <a href=""  class="btn btn-default "> Salvar</a>
-                </div>
+                <span>projeto postacad</span>
             </td>
+                <td>
+                    <a href="#"  class="btn btn-default "> Excluir</a><br/>
+                    <a href="#"  class="btn btn-default "> Publicar</a><br/>
+                    <a href="#"  class="btn btn-default "> Revisar</a><br/>
+                    <a type="button" class="btn btn-default " onclick="Mudarestado('divEdicao')">Editar</a>
+                    <br/>
+                    <div id="divEdicao">
+                        <input type="text"/>
+                        <a href="#"  class="btn btn-default "> Salvar</a>
+                    </div>
+
+                </td>
 
 
         </tr>
 
 
         </table>
-        <div class="divAcoes ">
-            <h3>Ações</h3><br>
-            <a href=""  class="btn btn-default "> Excluir</a><br>
-            <a href=""  class="btn btn-default "> Publicar</a><br>
-            <a href=""  class="btn btn-default "> Revisar</a><br>
-        </div>
+
 
     </div>
 
@@ -96,19 +102,41 @@
 
 
             <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Criar atividade</a>
-        <br>
+        <br/>
        <div id="criarAtividade">
            criar atividade
        </div>
 
         <table class="col-md-12">
+            <thead>
+            <tr>
+                <th>Responsável</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+            </tr>
+            </thead>
+
+            <tbody>
             <tr>
                 <td>
-                    <span>Atividade 1</span>
+
+                    <span>Responsavel</span>
+
+                </td>
+                <td>
+
+                    <span>Descriçãoasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssa</span>
+
+                </td>
+                <td>
+                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Excluir</a>
+                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Visualizar</a>
+                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Editar</a>
 
                 </td>
             </tr>
 
+            </tbody>
 
         </table>
 
@@ -128,12 +156,9 @@
         <div class="caixaTextChat">
             <ul class="chat">
 
-
                 <li class="chatTextLeft">
                     <p>Vamos marcar uma reunião?</p>
                 </li>
-
-
 
             </ul>
         </div>
@@ -154,12 +179,19 @@
     <h3>Integrantes</h3>
 
     <table class="col-md-12">
-        <tr>
-            <td>
-                <span>Integrante 1</span>
 
-            </td>
-        </tr>
+
+
+            <tr>
+                <td>
+                    <span>Integrante 1</span>
+
+                </td>
+                <td>
+                    excluir
+                </td>
+            </tr>
+
 
 
     </table>

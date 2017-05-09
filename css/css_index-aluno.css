@@ -19,8 +19,8 @@ div#divConteudo{
     text-align: center;
     overflow:auto;
     word-wrap: break-word;
-    border-right: 3px solid var(--alunoAzul);
-    border-bottom: 3px solid var(--alunoAzul);
+    border-right: 3px solid var(--corCinza);
+    border-bottom: 3px solid var(--corCinza);
     border-radius: 10px;
 
 

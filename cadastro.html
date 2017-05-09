@@ -26,18 +26,18 @@
   <body class="corFundo">
 
     <div class="divDadosCadastro ">
-      <form class="formCadastro form-signin" method="post">
+
+      <form class="formCadastro form-signin" method="post" th:action="@{/cadastrar}">
         <h2 class="form-signin-heading text-center">Crie uma nova conta!</h2>
 
-        <input type="text" id="inputNome" placeholder="Nome" class="form-control itensForm"/>
-        <input type="text" id="inputSobreNome" placeholder="Sobrenome" class="form-control itensForm"/>
+        <input name="nome" type="text" id="inputNome" placeholder="Nome" class="form-control itensForm"/>
+        <input name="sobreNome" type="text" id="inputSobreNome" placeholder="Sobrenome" class="form-control itensForm"/>
 
-        <input type="email" id="inputEmail" class="form-control itensForm" placeholder="Email" />
+        <input name="email" type="email" id="inputEmail" class="form-control itensForm" placeholder="Email" />
 
-        <input type="password" id="inputPassword" class="form-control itensForm" placeholder="Senha" />
+        <input name="senha" type="password" id="inputPassword" class="form-control itensForm" placeholder="Senha" />
 
         <fieldset>
-
           <input name="rTipo" id="rDocente" type="radio"/><label for="rDocente">Docente</label>
           <input name="rTipo" id="rDiscente" type="radio"/><label for="rDiscente">Discente</label>
         </fieldset>
@@ -51,7 +51,7 @@
 
     <div class="divInfoCadastro">
 
-    <img class="img-responsive center-block" src="imagens/escudo.png">
+    <img class="img-responsive center-block" src="imagens/escudo.png"/>
       <p>
         Seja bem-vindo ao PostAcad, a rede social de apoio aos trabalhos acadêmicos,
         com o PostAcad você e sua equipe teram a possibilidade de organizar os grupos e as atividades

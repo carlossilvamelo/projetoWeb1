@@ -13,6 +13,9 @@
     --alunoVerde: #00635d;
     --alunoAzulClaro:#09a4bd;
     --alunoHover:rgba(43, 102, 154, 0.05);
+    --profVerde: rgb(63, 158, 63);
+    --corBordas:#4c212a;
+    --corCinza: #3b3b3b;
 }
 
 
@@ -42,11 +45,11 @@ body, html {
     padding: 0px;
 }
 div#menu{
-
     margin-left: 0px;
     background-color: var(--alunoAzul);
 
 }
+
 div#menu button:hover{
     background-color: #60bd60;
     transition: background-color .5s;
@@ -66,12 +69,35 @@ div#menu h1{
     float: left;
     color: white;
     font-family: "Cooper Black";
-
     font-size: 50px;
     font-weight: bold;
     text-shadow: 0px 0px 5px var(--corAzulClaro);
 }
 
+/* MENU PROFESSOR*/
+div#menuProf{
+    margin-left: 0px;
+    background-color: var(--profVerde);
+
+}
+
+div#menuProf button:hover{
+    background-color: var(--profVerde);
+    transition: background-color .5s;
+    transition: color .5s;
+    color: white;
+}
+
+
+div#menuProf h1{
+    display: block;
+    float: left;
+    color: white;
+    font-family: "Cooper Black";
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px var(--profVerde);
+}
 
 
 /* DROPDOWN PERFIL*/
@@ -84,8 +110,8 @@ div#dropdownPerfil{
     position: relative;
     float: right;
     list-style: none;
-    border-bottom: 3px solid var(--alunoAzulClaro);
-    border-right: 3px solid var(--alunoAzulClaro);
+    border-bottom: 3px solid var(--corBordas);
+    border-right: 3px solid var(--corBordas);
     border-radius: 10px;
 
 }
@@ -138,7 +164,7 @@ div#dropdownPerfil:hover ul{
 }
 /* barras de navegação PROFESSOR*/
 .barraNavegacaoProfessor {
-    border-bottom: 1px solid #59d259;
+    border-bottom: 1px solid var(--profVerde);
     padding-left: 3px;
     padding-right: 3px;
     margin: auto;
@@ -147,16 +173,17 @@ div#dropdownPerfil:hover ul{
 }
 
 .barraNavegacaoProfessor a{
+    color: white;
     font-weight: bold;
     width: 33%;
     min-width: 200px;
     margin-top: 3px;
     margin-bottom: 3px;
-    background-color: #59d259;
+    background-color: var(--profVerde);
 }
 
 .barraNavegacaoProfessor a:hover{
-    background-color: #60bd60;
+    background-color: rgb(30, 66, 30);
     transition: background-color .5s;
     transition: color .5s;
     color: white;

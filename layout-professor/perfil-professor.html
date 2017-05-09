@@ -29,15 +29,15 @@
 <body class="backColor">
 
 
-        <nav  class="col-md-12 navbar navbar-default navbar-fixed-top ">
-            <div id="menu" class="container-fluid">
+        <nav  class="navegador col-md-12 navbar navbar-default navbar-fixed-top ">
+            <div id="menuProf" class="container-fluid">
 
                 <div id="imgLogoCabecalho" class="navbar-header ">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index-professor.html">
                         <img alt="Brand" src="../imagens/icone-brand.png"/>
                     </a>
                 </div>
-                <h1>Post<wbr>Acad</h1>
+                <h1>Post<wbr/>Acad</h1>
 
 
                 <div id="dropdownPerfil" class="">
@@ -51,10 +51,10 @@
             </div>
 
 
-            <div id="barraNavegacao" class=" barraNavegacaoProfessor span12 navbar-default nav-justified  ">
-                <a href=""type="button" class="btn btn-default navbar-btn ">Galeria de trabalhos</a>
-                <a href=""type="button" class="btn btn-default navbar-btn">Gerenciar contatos</a>
-                <a href=""type="button" class="btn btn-default navbar-btn">Gerenciar perfil</a>
+            <div id="barraNavegacao" class="barraNavegacaoProfessor span12 navbar-default nav-justified  ">
+                <a href="galeria-trabalhos.html" type="button" class="btn btn-default navbar-btn ">Galeria de trabalhos</a>
+                <a href="gerenciar-contatos.html" type="button" class="btn btn-default navbar-btn">Gerenciar contatos</a>
+                <a href="perfil-professor.html" type="button" class="btn btn-default navbar-btn">Gerenciar perfil</a>
             </div>
 
         </nav>
@@ -67,8 +67,8 @@
                 <tr>
                     <td>
                         <p>Nome:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divNome')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divNome')">Editar</a>
+                        <br/>
                         <div id="divNome" class="edicao">
                             <input type="text" placeholder="Nome"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
@@ -79,11 +79,11 @@
                 <tr>
                     <td>
                         <p>Sobrenome:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divSobrenome')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divSobrenome')">Editar</a>
+                        <br/>
                         <div id="divSobrenome" class="edicao">
                             <input type="text" placeholder="SObrenome"/>
-                            <a href=""  class="btn btn-default "> Salvar</a>
+                            <a href="#"  class="btn btn-default "> Salvar</a>
                         </div>
                     </td>
                 </tr>
@@ -91,8 +91,8 @@
                 <tr>
                     <td>
                         <p>Email:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divEmail')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divEmail')">Editar</a>
+                        <br/>
                         <div id="divEmail" class="edicao">
                             <input type="text" placeholder="Email"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
@@ -102,21 +102,9 @@
 
                 <tr>
                     <td>
-                        <p>Nome:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divEdicao')">Editar</a>
-                        <br>
-                        <div id="divEdicao" class="edicao">
-                            <input type="text" placeholder="Nome"/>
-                            <a href=""  class="btn btn-default "> Salvar</a>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
                         <p>CPF:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divCPF')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divCPF')">Editar</a>
+                        <br/>
                         <div id="divCPF" class="edicao">
                             <input type="text" placeholder="CPF"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
@@ -127,8 +115,8 @@
                 <tr>
                     <td>
                         <p>Data de nascimento:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divNascimento')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divNascimento')">Editar</a>
+                        <br/>
                         <div id="divNascimento" class="edicao">
                             <input type="date" placeholder="Data de nascimento"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
@@ -139,8 +127,8 @@
                 <tr>
                     <td>
                         <p>Login:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divLogin')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divLogin')">Editar</a>
+                        <br/>
                         <div id="divLogin" class="edicao">
                             <input type="text" placeholder="Login"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
@@ -151,8 +139,8 @@
                 <tr>
                     <td>
                         <p>Senha:</p> <span></span>
-                        <a type="button" class="btn btn-default " onclick="Mudarestado('divSenha')">Editar</a>
-                        <br>
+                        <a type="button" class="btn btn-default " onclick="mudarEstado('divSenha')">Editar</a>
+                        <br/>
                         <div id="divSenha" class="edicao">
                             <input type="text" placeholder="Senha"/>
                             <a href=""  class="btn btn-default "> Salvar</a>
