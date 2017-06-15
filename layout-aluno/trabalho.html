@@ -29,6 +29,7 @@
 <body class="backColor">
 
 
+
 <nav  class="navegador col-md-12 navbar navbar-default navbar-fixed-top ">
     <div id="menu" class="container-fluid">
 
@@ -69,25 +70,38 @@
                 <th>Ações</th>
             </thead>
 
+            <tbody>
             <tr>
-            <td>
-                <span>projeto postacad</span>
-            </td>
                 <td>
-                    <a href="#"  class="btn btn-default "> Excluir</a><br/>
-                    <a href="#"  class="btn btn-default "> Publicar</a><br/>
-                    <a href="#"  class="btn btn-default "> Revisar</a><br/>
-                    <a type="button" class="btn btn-default " onclick="Mudarestado('divEdicao')">Editar</a>
-                    <br/>
-                    <div id="divEdicao">
-                        <input type="text"/>
-                        <a href="#"  class="btn btn-default "> Salvar</a>
-                    </div>
+                    <span>projeto postacad</span>
+                </td>
+                <td>
+                    <a href="#"  class="btn btn-default "> Excluir</a>
+                    <a href="#"  class="btn btn-default "> Publicar</a>
+                    <a href="#"  class="btn btn-default "> Revisar</a>
+                    <a type="button" class="btn btn-default " onclick="fecharAbrirChat('editarTrabalho')">Editar</a>
+
 
                 </td>
 
+                <div id="editarTrabalho" class="divOculta">
+                    <span onclick="fecharAbrirChat('editarTrabalho')"  style="float: right" class=" glyphicon glyphicon-remove"></span>
+                    <h4>Editar atividade</h4>
 
-        </tr>
+                    <select id=i>
+                        <option value="" >Select Country</option>
+                        <option value="usa" >Usa</option>
+                        <option value="ca" >Canada</option>
+                        <option value="me" >Mexico</option>
+                    </select>
+
+                    <input type="text" placeholder="Descrição"/>
+                    <a href="#"  class="btn btn-default" onclick="fecharAbrirChat('editarAtividade')"> Salvar</a>
+                </div>
+
+            </tr>
+
+            </tbody>
 
 
         </table>
@@ -101,11 +115,23 @@
         <h3>Lista de atividades</h3>
 
 
-            <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Criar atividade</a>
+            <a type="button" class="btn btn-default botaoCriarAtividade" onclick="fecharAbrirChat('criarAtividade')">Criar atividade</a>
         <br/>
-       <div id="criarAtividade">
-           criar atividade
-       </div>
+
+        <div id="criarAtividade" class="divOculta">
+            <span onclick="fecharAbrirChat('criarAtividade')"  style="float: right" class=" glyphicon glyphicon-remove"></span>
+            <h4>Nova atividade</h4>
+
+            <select id=x>
+                <option value="" >Select Country</option>
+                <option value="usa" >Usa</option>
+                <option value="ca" >Canada</option>
+                <option value="me" >Mexico</option>
+            </select>
+
+            <input type="text" placeholder="Descrição"/>
+            <a href="#"  class="btn btn-default" onclick="fecharAbrirChat('editarAtividade')"> Salvar</a>
+        </div>
 
         <table class="col-md-12">
             <thead>
@@ -129,11 +155,39 @@
 
                 </td>
                 <td>
-                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Excluir</a>
-                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Visualizar</a>
-                    <a type="button" class="btn btn-default botaoCriarAtividade" onclick="Mudarestado('criarAtividade')">Editar</a>
+                    <a type="button" class="btn btn-danger botaoAcoes">Excluir</a>
+                    <a type="button" class="btn btn-primary botaoAcoes" onclick="fecharAbrirChat('divVisualizar')">Visualizar</a>
+                    <a type="button" class="btn btn-primary botaoAcoes" onclick="fecharAbrirChat('editarAtividade')">Editar</a>
 
                 </td>
+                <div id="divVisualizar" class="divOculta">
+                    <span onclick="fecharAbrirChat('divVisualizar')"  style="float: right" class=" glyphicon glyphicon-remove"></span>
+                    <h4>Nova atividade</h4>
+
+                    <select id=x>
+                        <option value="" >Select Country</option>
+                        <option value="usa" >Usa</option>
+                        <option value="ca" >Canada</option>
+                        <option value="me" >Mexico</option>
+                    </select>
+
+                    <input type="text" placeholder="Descrição"/>
+                    <a href="#"  class="btn btn-default" onclick="fecharAbrirChat('editarAtividade')"> Salvar</a>
+                </div>
+                <div id="editarAtividade" class="divOculta">
+                    <span onclick="fecharAbrirChat('editarAtividade')"  style="float: right" class=" glyphicon glyphicon-remove"></span>
+                    <h4>Editar atividade</h4>
+
+                    <select id=cbPais>
+                        <option value="" >Select Country</option>
+                        <option value="usa" >Usa</option>
+                        <option value="ca" >Canada</option>
+                        <option value="me" >Mexico</option>
+                    </select>
+
+                    <input type="text" placeholder="Descrição"/>
+                    <a href="#"  class="btn btn-default" onclick="fecharAbrirChat('editarAtividade')"> Salvar</a>
+                </div>
             </tr>
 
             </tbody>
@@ -188,7 +242,7 @@
 
                 </td>
                 <td>
-                    excluir
+                    <a type="button" class="btn btn-danger ">Excluir</a>
                 </td>
             </tr>
 

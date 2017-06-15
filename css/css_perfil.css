@@ -98,4 +98,17 @@ div#divAreaConhecimento{
 }
 
 
+.addAreaConhecimento{
+    padding: 2px;
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid #c9c9c9;
+    border-radius: 50px;
+}
+.addAreaConhecimento select{
+    border-radius: 5px;
+    padding: 7px;
+    background-color: var(--alunoHover);
+}
+
 

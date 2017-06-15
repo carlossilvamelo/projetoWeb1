@@ -66,12 +66,14 @@
     margin-left: 42%;
     margin-bottom: 20px;
 }
+.botaoAcoes{
+    width: 40%;
+    margin-left: 42%;
+    margin-bottom: 5px;
+}
 #criarAtividade{
     display: none;
-    border-right: 3px solid var(--alunoAzul);
-    border-bottom: 3px solid var(--alunoAzul);
-    height: 100px;
-    width: 100%;
+
 }
 
 
@@ -91,7 +93,28 @@
     text-align: center;
 }
 
+#editarAtividade{
+    display: none;
 
+}
+#divVisualizar{
+    display: none;
+}
+#editarTrabalho{
+    display: none;
+}
+.divOculta{
+    background-color: #e9e9e9;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid var(--alunoAzul);
+    height: 200px;
+    width: 650px;
+    position: absolute;
+    z-index: 1;
+    word-wrap: break-word;
+}
 
 #divEdicao{
     display: none;
@@ -105,21 +128,28 @@
 
 div#divInfoTrabalho{
     position: relative;
-
+}
+div#divInfoTrabalho table{
+    width: 100%;
+}
+div#divInfoTrabalho td{
+    width: 50px;
 }
 div#divInfoTrabalho h2{
     text-align: center;
     margin-bottom: 70px;
 }
 div#divInfoTrabalho table{
-    width: 600px;
+    width: 700px;
     word-wrap: break-word;
 }
 
 div#divInfoTrabalho table tr td a{
+    margin-left: 2px;
+    margin-right: 2px;
     margin-top: 0px;
     margin-bottom: 0px;
-    float: right;
+
 
 }
 div#divInfoTrabalho table tr td p{
@@ -131,18 +161,10 @@ div#divInfoTrabalho table tr td span{
 div#divInfoTrabalho table tr td{
     padding: 10px;
 }
-div#divInfoTrabalho table tr td:hover {
+div#divInfoTrabalho table tr:hover {
     background-color: var(--alunoHover);
 }
 
-.divAcoes{
-    width: 100px;
-    border: 1px solid var(--alunoAzul);
-    padding: 5px;
-}
-.divAcoes a{
-    width: 100%;
-}
 
 .divIntegrantes{
     height: 400px;
@@ -154,3 +176,8 @@ div#divInfoTrabalho table tr td:hover {
     border-bottom: 3px solid var(--alunoAzul);
     border-radius: 10px;
 }
+
+
+.visualizarTrabalhoAluno{}
+
+.visualizarTrabalhoProfessor{}

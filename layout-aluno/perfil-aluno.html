@@ -70,7 +70,7 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divNome')">Editar</a>
                 <br/>
                 <div id="divNome" class="edicao">
-                    <input type="text" placeholder="Nome"/>
+                    <input name="nome" type="text" placeholder="Nome"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -82,7 +82,19 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divSobrenome')">Editar</a>
                 <br/>
                 <div id="divSobrenome" class="edicao">
-                    <input type="text" placeholder="SObrenome"/>
+                    <input name="sobreNome" type="text" placeholder="Sobrenome"/>
+                    <a href="#"  class="btn btn-default "> Salvar</a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>Matrícula:</p> <span></span>
+                <a type="button" class="btn btn-default " onclick="mudarEstado('divMatricula')">Editar</a>
+                <br/>
+                <div id="divMatricula" class="edicao">
+                    <input name="matricula" type="text" placeholder="Senha"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -94,7 +106,7 @@
                 <a href="#" type="button" class="btn btn-default " onclick="mudarEstado('divEmail')">Editar</a>
                 <br/>
                 <div id="divEmail" class="edicao">
-                    <input type="text" placeholder="Email"/>
+                    <input name="email" type="text" placeholder="Email"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -106,7 +118,7 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divCPF')">Editar</a>
                 <br/>
                 <div id="divCPF" class="edicao">
-                    <input type="text" placeholder="CPF"/>
+                    <input name="cpf" type="text" placeholder="CPF"/>
                     <a href=""  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -118,7 +130,19 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divNascimento')">Editar</a>
                 <br/>
                 <div id="divNascimento" class="edicao">
-                    <input type="date" placeholder="Data de nascimento"/>
+                    <input name="dataNascimento" type="date" placeholder="Data de nascimento"/>
+                    <a href="#"  class="btn btn-default "> Salvar</a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>Currículo:</p> <span></span>
+                <a type="button" class="btn btn-default " onclick="mudarEstado('divNascimento')">Editar</a>
+                <br/>
+                <div id="divCurriculo" class="edicao">
+                    <input name="curriculo" type="date" placeholder="Curriculo"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -130,7 +154,7 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divLogin')">Editar</a>
                 <br/>
                 <div id="divLogin" class="edicao">
-                    <input type="text" placeholder="Login"/>
+                    <input name="login" type="text" placeholder="Login"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
@@ -142,20 +166,67 @@
                 <a type="button" class="btn btn-default " onclick="mudarEstado('divSenha')">Editar</a>
                 <br/>
                 <div id="divSenha" class="edicao">
-                    <input type="text" placeholder="Senha"/>
+                    <input name="senha" type="text" placeholder="Senha"/>
+                    <a href="#"  class="btn btn-default "> Salvar</a>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <table class="container-fluid  col-md-6 ">
+        <h3 style="text-align: center">Endereço</h3>
+        <tr>
+        <td>
+            <p>Cep:</p> <span></span>
+            <a type="button" class="btn btn-default " onclick="mudarEstado('divSenha')">Editar</a>
+            <br/>
+            <div id="divCep" class="edicao">
+                <input name="cep" type="text" placeholder="cep"/>
+                <a href="#"  class="btn btn-default "> Salvar</a>
+            </div>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Rua:</p> <span></span>
+                <a type="button" class="btn btn-default " onclick="mudarEstado('divSenha')">Editar</a>
+                <br/>
+                <div id="divRua" class="edicao">
+                    <input name="rua" type="text" placeholder="Rua"/>
+                    <a href="#"  class="btn btn-default "> Salvar</a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p>Número:</p> <span></span>
+                <a type="button" class="btn btn-default " onclick="mudarEstado('divSenha')">Editar</a>
+                <br/>
+                <div id="divNumero" class="edicao">
+                    <input name="numero" type="text" placeholder="Número"/>
                     <a href="#"  class="btn btn-default "> Salvar</a>
                 </div>
             </td>
         </tr>
 
 
-    </table>
 
+    </table>
 </div>
 
 <div id="divAreaConhecimento" class="col-md-4">
     <h2>Áreas de conhecimento</h2>
-
+    <div class="addAreaConhecimento">
+        <select id=x>
+            <option value="" >Escolha uma área</option>
+            <option value="usa" >Usa</option>
+            <option value="ca" >Canada</option>
+            <option value="me" >Mexico</option>
+        </select>
+        <a type="button" class="btn btn-primary ">Adicionar</a>
+    </div>
     <table class="col-md-12 itemArea">
         <tr>
             <td>

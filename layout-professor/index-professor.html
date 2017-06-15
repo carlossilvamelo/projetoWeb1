@@ -16,9 +16,7 @@
     <link href="../css/global.css" rel="stylesheet"/>
     <link href="../css/css_index-aluno.css" rel="stylesheet"/>
     <link href="../css/css_barra-navegacao-aluno.css" rel="stylesheet"/>
-    <link href="../css-bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
-    <link href="../css-bootstrap/signin.css" rel="stylesheet"/>
-    <script src="../js-bootstrap/bootstrap.js"></script>
+
     <script src="../js-bootstrap/ie-emulation-modes-warning.js"></script>
     <script src="../js/global.js"></script>
 
@@ -69,38 +67,54 @@
                         resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
                         resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo </p>
 
-                    <a href="" class="botaoCurtirComentar glyphicon glyphicon-thumbs-up"> Cutir</a>
-                    <a href="" class="botaoCurtirComentar glyphicon glyphicon glyphicon-comment"> Comentar</a>
-                    <a href=""type="button" class="botaoVisualizar btn btn-default navbar-btn">Visualizar</a>
+                    <a href="#" class="botaoCurtirComentar glyphicon glyphicon-thumbs-up"> Cutir</a>
+                    <a href="#" type="button" class="btn botaoCurtirComentar glyphicon glyphicon glyphicon-comment" onclick="fecharAbrirChat('divComentarios')"> Comentar</a>
+
+                    <a href="#" type="button" class="botaoVisualizar btn btn-default navbar-btn" onclick="fecharAbrirChat('divVisualizarTrabalho')">Visualizar</a>
+
+
+                    <div id="divComentarios">
+                        <div  class="col-md-12 ">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-comment"></span> Comentários
+                                </div>
+                                <div >
+                                    <ul class="chat caixaComentarios">
+
+                                        <li class="chatTextLeft ">
+                                            <span>Nome:</span>
+                                            <p>Que legal o trabalho de vocês!</p>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                                <div class="panel-footer">
+                                    <div class="input-group">
+                                        <input  type="text" class="form-control input-sm" placeholder="Mensagem.." />
+                                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" >
+                                Send</button>
+                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </td>
+
+
+
+
+                    <div id="divVisualizarTrabalho" class="visualizarTrabalho">
+                        <span onclick="fecharAbrirChat('divVisualizarTrabalho')"  style="float: right" class=" glyphicon glyphicon-remove"></span>
+                        asdasdasd
+
+                    </div>
             </tr>
-                <tr>
-                    <td>
-                        <h2>Titulo</h2>
-                        <p>resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo </p>
-
-                        <a href="#" class="botaoCurtirComentar glyphicon glyphicon-thumbs-up"> Cutir</a>
-                        <a href="#" class="botaoCurtirComentar glyphicon glyphicon glyphicon-comment"> Comentar</a>
-                        <a href="#" type="button" class="botaoVisualizar btn btn-default navbar-btn">Visualizar</a>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Titulo</h2>
-                        <p>resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo
-                            resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo resumo </p>
-
-                        <a href="" class="botaoCurtirComentar glyphicon glyphicon-thumbs-up"> Cutir</a>
-                        <a href="" class="botaoCurtirComentar glyphicon glyphicon glyphicon-comment"> Comentar</a>
-                        <a href=""type="button" class="botaoVisualizar btn btn-default navbar-btn">Visualizar</a>
-                    </td>
-                </tr>
 
 
             </table>
@@ -120,15 +134,10 @@
 
             <div class="listaContatos">
                 <table>
-                    <tr class="">
-                        <td><h4>contato 1</h4>
-                            <a href=""type="button" class="btn btn-default navbar-btn">Conversar</a>
-                        </td>
 
-                    </tr>
                     <tr class="">
                         <td><h4>contato 2</h4>
-                            <a onclick="fecharAbrirChat('caixaDeChats')" href=""type="button" class="btn btn-default navbar-btn">Conversar</a>
+                            <a onclick="fecharAbrirChat('caixaDeChats')" href="#" type="button" class="btn btn-default navbar-btn">Conversar</a>
                         </td>
 
                     </tr>
