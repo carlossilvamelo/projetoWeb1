@@ -48,8 +48,8 @@ body{
 
 .divInfoCadastro p{
     margin-top: 0px;
-    font-family: "Comic Sans MS";
-    font-size: large;
+    font-size: medium;
     padding: 20px;
     text-align: center;
+    font-weight: bold;
 }
