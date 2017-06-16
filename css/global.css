@@ -7,18 +7,18 @@
     --corAzulClaro: rgba(19, 0, 187, 0.9);
 
     /*perfil aluno*/
-    --alunoAzul: #4d58b0;
+    --alunoAzul: #265eb9;
     --alunoAcajou: #4c212a;
     --alunoAzulMarinho: #01172f;
     --alunoVerde: #00635d;
     --alunoAzulClaro:#09a4bd;
-    --alunoHover:rgba(43, 102, 154, 0.05);
+    --alunoHover: rgba(141, 141, 141, 0.15);
     --profVerde: rgb(63, 158, 63);
     --corBordas:#4c212a;
     --corCinza: #3b3b3b;
 }
 
-h1 {
+h1{
     font-family: Frutiger;
     font-size: 14px;
     font-style: normal;
@@ -56,6 +56,7 @@ body, html {
     background:fixed;
 
 }*/
+
 .navegador{
     margin: 0px;
     padding: 0px;
@@ -156,17 +157,16 @@ div#dropdownPerfil:hover ul{
 
 /* barras de navegação ALUNO*/
 .barraNavegacaoAluno {
-    border-bottom: 2px solid var(--alunoAzul);
     padding-left: 3px;
     padding-right: 3px;
     margin: auto;
-    width:100%;
+    width:50%;
 }
 
 .barraNavegacaoAluno a{
     font-weight: bold;
     color: white;
-    width: 33%;
+    width: 15%;
     min-width: 200px;
     margin-top: 3px;
     margin-bottom: 3px;
