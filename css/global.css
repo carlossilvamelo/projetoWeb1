@@ -153,7 +153,9 @@ div#dropdownPerfil:hover ul{
 
 }
 
-
+body{
+    padding-top: 50px;
+}
 
 /* barras de navegação ALUNO*/
 .barraNavegacaoAluno {
@@ -180,18 +182,17 @@ div#dropdownPerfil:hover ul{
 }
 /* barras de navegação PROFESSOR*/
 .barraNavegacaoProfessor {
-    border-bottom: 1px solid var(--profVerde);
     padding-left: 3px;
     padding-right: 3px;
     margin: auto;
-    width:100%;
+    width:50%;
 
 }
 
 .barraNavegacaoProfessor a{
     color: white;
     font-weight: bold;
-    width: 33%;
+    width: 15%;
     min-width: 200px;
     margin-top: 3px;
     margin-bottom: 3px;
