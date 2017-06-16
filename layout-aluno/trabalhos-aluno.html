@@ -22,22 +22,17 @@
     <script src="../js-bootstrap/ie-emulation-modes-warning.js"></script>
     <script src="../js/global.js" type="text/javascript"></script>
 
-
-
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header-aluno.html");
+        });
+    </script>
 
 </head>
-<body class="backColor">
 
-
-<nav  class="navegador col-md-12 navbar navbar-default navbar-fixed-top ">
-    <div id="menu" class="container-fluid">
-
-        <div id="imgLogoCabecalho" class="navbar-header ">
-            <a class="navbar-brand" href="index-aluno.html">
-                <img alt="Brand" src="../imagens/icone-brand.png"/>
-            </a>
-        </div>
-        <h1>Post<wbr/>Acad</h1>
+<body>
+<div id="header"></div>
 
 
         <div id="dropdownPerfil" class="">
